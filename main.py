@@ -96,18 +96,18 @@ class TokenUploader():
 
             try:
                 data = json.loads(response)
-            except:
-                ScreenCloud.setError("Error decoding json: " + data)
+                error = data.get('error')
+                url = data.get('href')
 
-            error = data.get('error')
-            url = data.get('href')
+                if error:
 
-            if error:
+                    ScreenCloud.setError("Could not upload to: " + self.url_address + "\nError: " + error)
+                    return False
 
-                ScreenCloud.setError("Could not upload to: " + self.url_address + "\nError: " + error)
-                return False
-
-            ScreenCloud.setUrl(url)
+                ScreenCloud.setUrl(url)
+                
+            except Exception error:
+                ScreenCloud.setError("Error decoding json: " + data + "\nError:\n" + error")
 
         except urllib.error.HTTPError as exc:
 
