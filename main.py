@@ -108,6 +108,7 @@ class TokenUploader():
 
             except:
                 ScreenCloud.setError("Error decoding json: " + data)
+                return False
 
         except urllib.error.HTTPError as exc:
 
