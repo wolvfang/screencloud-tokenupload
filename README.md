@@ -12,7 +12,7 @@ Install [URL Token Upload][current] zip in **ScreenCloud** > **Preferences** > *
 
 ![](http://i.imgur.com/lQIdGt4.png)
 
-**Note:** If you are using ScreenCloud version 1.2.0 or earlier, please use [screencloud-tokenupload release v1.0.0](https://github.com/RezzedUp/screencloud-tokenupload/releases) This version is written with Python 2, which is no longer compatible with ScreenCloud (since ScreenCloud 1.3.0).
+**Note:** If you are using ScreenCloud version 1.2.0 or earlier, please use [screencloud-tokenupload release v1.0.0](https://github.com/wolvfang/screencloud-tokenupload/releases) This version is written with Python 2, which is no longer compatible with ScreenCloud (since ScreenCloud 1.3.0).
 
 Plugin Configuration
 --------------------
